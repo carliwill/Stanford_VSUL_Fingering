@@ -1,4 +1,5 @@
-# co2_fingers
+# Stanford_VSUL_Fingering
+
 
 A Python package for analyzing **CO₂ convective fingering** in FluidFlower experiments.
 
@@ -10,7 +11,7 @@ Extracted and cleaned from Carlin Will's Colab notebooks
 ## Package structure
 
 ```
-co2_fingers/
+Stanford_VSUL_Fingering/
 ├── co2_fingers/
 │   ├── __init__.py          # Public API + imports
 │   ├── io.py                # Time extraction, image loading
