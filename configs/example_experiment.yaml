@@ -1,0 +1,27 @@
+experiment:
+  name: C2R5
+  image_dir: /content/drive/My Drive/CO2_diff/C2R5
+  csv_path: /content/drive/My Drive/CO2_diff/image_last_modified.csv
+  baseline_frame: IMG_1260.JPG
+  output_dir: ./results/C2R5
+
+crop:
+  y_top: 2300
+  y_bot: 3300
+  x_left: 230
+  x_right: 5700
+
+physical:
+  frame_width_m: 0.55
+  flow_direction: down
+
+detection:
+  manual_onset_min: 330     # set to null for automatic
+  sigma_threshold: 2.0
+  slope_threshold: 0.80
+  drop_fraction: 0.10
+  valley_distance: 20
+  roughness_k: 0.5
+  contour_epsilon: 0.0001
+  median_ksize: 9
+  gaussian_sigma: 1.0
