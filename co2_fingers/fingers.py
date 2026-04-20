@@ -72,7 +72,7 @@ def detect_fingers(
     smooth_interface: np.ndarray,
     residual: np.ndarray,
     x_vals: np.ndarray,
-    distance: int = 20,
+    distance: int = 30,
     prominence_override: float | None = None,
     roughness_k: float = 2.5,
     baseline_y_bar: np.ndarray | None = None,
