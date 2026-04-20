@@ -140,7 +140,7 @@ class Experiment:
             v_idx = detect_fingers(
                 smooth_iface, self.baseline["residual"], x_vals,
                 distance=d.valley_distance,
-                prominence_override=self.baseline["prominence"],
+                prominence_override=30,
                 baseline_y_bar=interp["y_bar"],
             )
             v_x = x_vals[v_idx]
