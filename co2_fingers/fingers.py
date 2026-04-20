@@ -114,8 +114,9 @@ def detect_fingers(
         Integer array of indices into *smooth_interface* / *x_vals* where
         fingers were detected.
     """
-    prom = prominence_override if prominence_override is not None \
-           else roughness_k * np.std(residual)
+    prom = 30
+    #prom = prominence_override if prominence_override is not None \
+          # else roughness_k * np.std(residual)
 
     valley_idx, _ = find_peaks(smooth_interface, distance=distance, prominence=prom)
 
