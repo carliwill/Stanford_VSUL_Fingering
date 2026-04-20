@@ -70,9 +70,9 @@ def crop_image(
 def preprocess(
     image: np.ndarray,
     y_top: int = 2300,
-    y_bot: int = 3300,
-    x_left: int = 230,
-    x_right: int = 5700,
+    y_bot: int = 3500,
+    x_left: int = 0,
+    x_right: int = 6000,
     use_otsu: bool = True,
     manual_thresh: int = 127,
     median_ksize: int = 5,
