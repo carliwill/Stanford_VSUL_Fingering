@@ -32,8 +32,8 @@ def crop_image(
     image: np.ndarray,
     y_top: int,
     y_bot: int,
-    x_left: int = 230,
-    x_right: int = 5700,
+    x_left: int = 0,
+    x_right: int = 6000,
 ) -> np.ndarray:
     """
     Crop a raw FluidFlower image to the CO₂-permeable zone.
