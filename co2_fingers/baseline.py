@@ -17,9 +17,9 @@ from .fingers import mean_front, roughness_sigma
 def compute_static_baseline(
     baseline_image,
     y_top: int = 2300,
-    y_bot: int = 3300,
-    x_left: int = 230,
-    x_right: int = 5700,
+    y_bot: int = 3500,
+    x_left: int = 0,
+    x_right: int = 6000,
     window_frac: float = 0.6,
     y_bar_offset: float = 5.0,
     roughness_k: float = 0.5,
