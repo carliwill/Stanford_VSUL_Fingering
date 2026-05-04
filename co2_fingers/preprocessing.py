@@ -155,8 +155,8 @@ def preprocess(
 
 def clamp_interface(
     interface: np.ndarray,
-    max_jump: int = 30,
-    median_size: int = 15,
+    max_jump: int = 200,
+    median_size: int = 10,
 ) -> np.ndarray:
     """
     Remove per-column spikes from a 1-D interface position array.
